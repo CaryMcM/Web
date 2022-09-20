@@ -18,10 +18,10 @@
   <head>
     <meta charset="utf-8" />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <title>Chico's Cheese Bicycles</title>
+    <title>Flood insurance</title>
     <link
       rel="shortcut icon"
-      href="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheese-favicon.png?1540228964214"
+      href="assets\floodIcon.png"
     />
     <meta
       name="viewport"
@@ -653,47 +653,34 @@
         ✕
       </div>
       <ul class="label">
-        <li class="nav-item"><a href="#">Our Story</a></li>
-        <li class="nav-item nav-dropdown">
-          <amp-accordion
-            layout="container"
-            disable-session-states=""
-            class="dropdown"
-          >
-            <section>
-              <header>Our Bikes</header>
-              <ul class="dropdown-items">
-                <li class="dropdown-item"><a href="#">Ricotta Racer</a></li>
-                <li class="dropdown-item"><a href="#">Cheddar Chaser</a></li>
-                <li class="dropdown-item"><a href="#">Parmesan Pacer</a></li>
-              </ul>
-            </section>
-          </amp-accordion>
+        <li class="nav-item">
+        
+          <a href="index.html" class="text-decoration-none block 22">
+              <amp-img
+                src="assets\FloodNFIP.svg"
+                width="300"
+                height="41.436"
+                layout="intrinsic"
+                alt="Company logo"
+                noloading=""
+              >
+               
+              </amp-img>
+            </a>
+        
         </li>
-        <li class="nav-item nav-dropdown">
-          <amp-accordion
-            layout="container"
-            disable-session-states=""
-            class="dropdown"
-          >
-            <section>
-              <header>Latest Models</header>
-              <ul class="dropdown-items">
-                <li class="dropdown-item"><a href="#">Ricotta Racer</a></li>
-              </ul>
-            </section>
-          </amp-accordion>
-        </li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="quote.html">flood quote</a></li>
+        <li class="nav-item"><a href="nfip.html">nfip</a></li>
+        <li class="nav-item"><a href="privateflood.html">private flood market</a></li>     
+        
+   
+        <li class="nav-item"><a href="contact.html">Contact</a></li>
       </ul>
     </amp-sidebar>
 
     <main>
       <div class="main-content">
-        <amp-image-lightbox
-          id="ricotta-racer-lightbox"
-          layout="nodisplay"
-        ></amp-image-lightbox>
+        
         <amp-img
           on="tap:ricotta-racer-lightbox"
           role="button"
@@ -713,124 +700,11 @@
             rodent-repelling varnish they last longer than ever!
           </p>
 
-          <amp-carousel
-            on="slideChange:ampSelector.toggle(index=event.index)"
-            lightbox
-            id="imageSlides"
-            layout="responsive"
-            width="412"
-            height="309"
-            type="slides"
-            loop
-          >
-            <amp-img
-              src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheddar-chaser.jpg?1540228205366"
-              width="412"
-              height="309"
-              layout="responsive"
-            ></amp-img>
-            <amp-img
-              src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheese.jpg?1540228223785"
-              width="412"
-              height="309"
-              layout="responsive"
-            ></amp-img>
-            <amp-img
-              src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fmouse.jpg?1540228223963"
-              width="412"
-              height="309"
-              layout="responsive"
-            ></amp-img>
-          </amp-carousel>
-          <amp-selector id="ampSelector">
-            <amp-carousel
-              layout="fixed-height"
-              height="78"
-              class="thumbnail-carousel"
-            >
-              <amp-img
-                option="0"
-                selected
-                on="tap:imageSlides.goToSlide(index=0)"
-                role="button"
-                tabindex="1"
-                src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheddar-chaser-thumb.jpg?1540228250623"
-                width="96"
-                height="72"
-                layout="fixed"
-              ></amp-img>
-              <amp-img
-                option="1"
-                on="tap:imageSlides.goToSlide(index=1)"
-                role="button"
-                tabindex="1"
-                src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fcheese-thumb.jpg?1540228249992"
-                width="96"
-                height="72"
-                layout="fixed"
-              ></amp-img>
-              <amp-img
-                option="2"
-                on="tap:imageSlides.goToSlide(index=2)"
-                role="button"
-                tabindex="1"
-                src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fmouse-thumb.jpg?1540228249062"
-                width="96"
-                height="72"
-                layout="fixed"
-              ></amp-img>
-            </amp-carousel>
-          </amp-selector>
+         
 
-          <amp-youtube
-            data-videoid="BlpMQ7fMCzA"
-            layout="responsive"
-            width="480"
-            height="270"
-          >
-            <div fallback><p>The video could not be loaded.</p></div>
-          </amp-youtube>
+          
 
-          <h2 class="main-heading">Subscribe to our Newsletter</h2>
-
-          <div class="subscribe-card-container">
-            <div class="subscribe-card">
-              <form
-                method="post"
-                class="main-form"
-                action-xhr="/submit-form"
-                target="_top"
-              >
-                <div class="input">
-                  <input type="text" id="form-name" name="name" required />
-                  <label for="form-name" aria-hidden="true">
-                    Enter your Name
-                  </label>
-                </div>
-                <div class="input">
-                  <input type="email" id="form-email" name="email" required />
-                  <label for="form-email" aria-hidden="true">
-                    Enter your Email
-                  </label>
-                </div>
-                <input type="submit" value="Subscribe" class="btn" />
-                <div submit-success>
-                  <template type="amp-mustache">
-                    <p class="form-submit-response">
-                      Success! Thanks {{ name }} for subscribing!
-                    </p>
-                  </template>
-                </div>
-                <div submit-error>
-                  <template type="amp-mustache">
-                    <p class="form-submit-response">
-                      Uh-oh, there was an error!
-                    </p>
-                  </template>
-                </div>
-              </form>
-            </div>
-          </div>
+          
 
           <div class="social-bar">
             <amp-social-share
