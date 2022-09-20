@@ -153,7 +153,7 @@
         display: flex;
         left: 0;
         padding-left: 1rem;
-        position: fixed;
+        position: relative;
         right: 0;
         top: 0;
         z-index: 999;
@@ -570,6 +570,24 @@
         font-weight: bold;
         font-size: 16px;
       }
+
+      /* headerbar styling */
+
+      .center {
+        
+      display: block;
+      position: relative;
+        
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+        
+      }
+      
+      .cary {
+        padding-right: 0;
+      }
+
     </style>
   </head>
   <body>
@@ -578,11 +596,46 @@
         role="button"
         on="tap:header-sidebar.toggle"
         tabindex="0"
-        class="navbar-trigger"
+        class="navbar-trigger cary"
       >
-        ☰
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewbox="0 0 24 24"
+          class="block"
+        >
+          <path fill="none" d="M0 0h24v24H0z"></path>
+          <path
+            fill="currentColor"
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          ></path>
+        </svg>
       </div>
-      <h2>Chico's Cheese Bicycles</h2>
+      <a
+        href="index.html"
+        class="center"
+        >
+        <amp-img
+          src="assets\FloodNFIP.svg"
+          width="350"
+          height="48.34"
+          layout="intrinsic"
+          alt="Company logo"
+        ></amp-img>
+      </a>
+  
+      <a href="tel:7136600200">
+        <amp-img src="assets\call_FILL0_wght400_GRAD0_opsz24.svg"
+          width="24"
+          height="24"
+          layout="intrinsic"
+          alt="telephone">
+
+        </amp-img>
+      </a>
+
+      
     </header>
 
     <amp-sidebar
