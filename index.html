@@ -153,6 +153,7 @@
         display: flex;
         left: 0;
         padding-left: 1rem;
+        padding-right: 1rem;
         position: relative;
         right: 0;
         top: 0;
@@ -587,11 +588,14 @@
       .cary {
         padding-right: 0;
       }
+      .fixed {
+        position: fixed;
 
     </style>
   </head>
   <body>
-    <header class="headerbar">
+    <header class="headerbar fixed">
+      
       <div
         role="button"
         on="tap:header-sidebar.toggle"
@@ -681,15 +685,19 @@
     <main>
       <div class="main-content">
         
+        <a href="quote.html"
+          class="">
+        
         <amp-img
           on="tap:ricotta-racer-lightbox"
           role="button"
           tabindex="0"
-          src="https://cdn.glitch.com/d7f46a57-0ca4-4cca-ab0f-69068dec6631%2Fricotta-racer.jpg?1540228217746"
+          src="assets\NoaaHurricane.png"
           layout="responsive"
-          width="640"
-          height="480"
+          width="700"
+          height="438"
         ></amp-img>
+      </a>
 
         <div class="below-hero">
           <h2 class="main-heading">What we're about</h2>
